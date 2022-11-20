@@ -9,7 +9,7 @@ const expletusSans = Expletus_Sans({
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <div className={`${expletusSans.variable} font-sans`}>
+    <div className={`${expletusSans.variable} font-sans h-full`}>
       <Component {...pageProps} />
     </div>
   );
