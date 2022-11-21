@@ -15,6 +15,12 @@
     "jsx": "preserve",
     "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
-  "exclude": ["node_modules"]
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "image-test.js"],
+  "exclude": ["node_modules"],
+  "ts-node": {
+    "transpileOnly": false,
+    "compilerOptions": {
+      "module": "CommonJS"
+    }
+  }
 }
