@@ -5,4 +5,5 @@ export type Photo = {
   height: number;
   alt: string;
   blurDataURL: string;
+  likes: number;
 };
