@@ -50,7 +50,7 @@ export const getStaticProps: GetStaticProps<HomeProps> = async () => {
       oceans,
       forests,
     },
-    revalidate: 10,
+    // revalidate: 10,    uncomment for ISR
   };
 };
 
@@ -70,6 +70,7 @@ export default function Home({ oceans, forests }: HomeProps) {
       </Head>
 
       <Image
+        priority
         className="fixed left-0 top-0 z-0"
         src={bgImage}
         alt="background-image"
